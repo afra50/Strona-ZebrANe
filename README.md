@@ -1,1 +1,1 @@
-JS, React, SCSS + node
+React, SCSS + node.js
