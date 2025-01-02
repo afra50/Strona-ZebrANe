@@ -1,0 +1,67 @@
+@import "./variables.scss";
+@import "./animations.scss";
+
+.donation {
+  background-color: $grey_background;
+}
+
+.support_container {
+  min-height: 550px;
+  max-width: 1000px;
+  align-items: center;
+  -webkit-box-align: center;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  font-family: $secondary_font;
+  .left_column,
+  .right_column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    h3 {
+      text-transform: uppercase;
+      font-size: 3rem;
+      font-weight: 400;
+      color: $more_grey_color;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1.2rem;
+      opacity: 0;
+      animation: slideInLeft 1s ease-in-out forwards;
+    }
+    p {
+      color: $grey_color;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      word-spacing: 0.1rem;
+      letter-spacing: 0.05rem;
+      p {
+        margin-bottom: 1rem;
+        em {
+          display: block;
+          margin: 1rem 0;
+          font-style: normal;
+          color: $main_blue;
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .blue_line {
+      width: 20%;
+      border-top: 5px solid;
+      border-top-color: $main_blue;
+      padding: 1rem 0;
+      opacity: 0;
+      animation: slideInLeft 1s ease-in-out forwards;
+    }
+    i {
+      text-align: right;
+      font-size: 15rem;
+      color: $main_blue;
+      opacity: 0;
+      animation: slideInRight 1s ease-in-out forwards;
+    }
+  }
+}

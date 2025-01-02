@@ -1,15 +1,5 @@
 @import "./variables.scss";
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px); /* Początkowa pozycja nieco poniżej */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* Końcowa pozycja */
-  }
-}
+@import "./animations.scss";
 
 .banner {
   position: relative;
