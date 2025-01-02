@@ -3,6 +3,13 @@
 
 .donation {
   background-color: $grey_background;
+  &.visible {
+    .left_column h3,
+    .blue_line,
+    .right_column i {
+      animation-play-state: running;
+    }
+  }
 }
 
 .support_container {
@@ -29,6 +36,17 @@
       margin-bottom: 1.2rem;
       opacity: 0;
       animation: slideInLeft 1s ease-in-out forwards;
+      animation-play-state: paused;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 20%;
+        min-width: 100px;
+        height: 4px;
+        background-color: $main_blue;
+      }
     }
     p {
       color: $grey_color;
@@ -36,16 +54,14 @@
       line-height: 1.8rem;
       word-spacing: 0.1rem;
       letter-spacing: 0.05rem;
-      p {
-        margin-bottom: 1rem;
-        em {
-          display: block;
-          margin: 1rem 0;
-          font-style: normal;
-          color: $main_blue;
-          font-weight: bold;
-          font-size: 1.5rem;
-        }
+      margin-bottom: 1rem;
+      em {
+        display: block;
+        margin: 1rem 0;
+        font-style: normal;
+        color: $main_blue;
+        font-weight: bold;
+        font-size: 1.5rem;
       }
     }
     .blue_line {
@@ -55,6 +71,7 @@
       padding: 1rem 0;
       opacity: 0;
       animation: slideInLeft 1s ease-in-out forwards;
+      animation-play-state: paused;
     }
     i {
       text-align: right;
@@ -62,6 +79,7 @@
       color: $main_blue;
       opacity: 0;
       animation: slideInRight 1s ease-in-out forwards;
+      animation-play-state: paused;
     }
   }
 }
