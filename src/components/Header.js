@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../styles/Header.scss";
 
 function Header() {
@@ -7,27 +8,39 @@ function Header() {
       <nav id="main_nav">
         <ul className="menu">
           <li className="menu_item">
-            <a href="/">Adoptuję</a>
+            <NavLink to="/adoptuje" activeClassName="active">
+              Adoptuję
+            </NavLink>
           </li>
           <li className="menu_item">
-            <a href="/">Wspieram</a>
+            <NavLink to="/wspieram" activeClassName="active">
+              Wspieram
+            </NavLink>
           </li>
           <li className="menu_item">
-            <a href="/">ABC Adopcji</a>
+            <NavLink to="/abc-adopcji" activeClassName="active">
+              ABC Adopcji
+            </NavLink>
           </li>
           <li className="logo">
-            <a href="/">
+            <NavLink to="/" activeClassName="active">
               <img src={`${process.env.PUBLIC_URL}/Logo.png`} alt="Logo" />
-            </a>
+            </NavLink>
           </li>
           <li className="menu_item">
-            <a href="/">Baza wiedzy</a>
+            <NavLink to="/baza-wiedzy" activeClassName="active">
+              Baza wiedzy
+            </NavLink>
           </li>
           <li className="menu_item">
-            <a href="/">O nas</a>
+            <NavLink to="/o-nas" activeClassName="active">
+              O nas
+            </NavLink>
           </li>
           <li className="menu_item">
-            <a href="/">Kontakt</a>
+            <NavLink to="/kontakt" activeClassName="active">
+              Kontakt
+            </NavLink>
           </li>
         </ul>
       </nav>
