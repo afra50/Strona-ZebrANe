@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "../styles/App.scss";
 import Header from "./Header";
 import Home_page from "./pages/Home_page";
+import Support_page from "./pages/Support_page";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home_page />} />
+        <Route path="/wspieram" element={<Support_page />} />
       </Routes>
     </Router>
   );

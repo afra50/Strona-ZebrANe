@@ -3,7 +3,9 @@
 .header {
   display: flex;
   justify-content: center;
-  font-family: $menu_font;
+  align-items: center;
+  position: relative;
+  font-family: $primary_font;
 
   #main_nav {
     .menu {
@@ -72,6 +74,9 @@
 
           &.active {
             color: inherit;
+            &:hover {
+              color: $hover_blue;
+            }
           }
         }
       }
