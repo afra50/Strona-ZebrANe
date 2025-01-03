@@ -1,0 +1,87 @@
+@import "variables.scss";
+
+.contact_form {
+    .form_row {
+        display: flex;
+        justify-content: space-between;
+        .form_group {
+            min-width: 45%;
+        }
+    }
+    .form_group {
+        margin: 0rem 0rem 1rem 0rem;
+        input {
+            padding: 0.5rem;
+            font-family: $secondary_font;
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            color: $grey_color;
+            box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.36);
+            border: 1px solid #d9dee8;
+            border-radius: 8px;
+            width: 100%;
+        }
+        textarea {
+            padding: 0.5rem;
+            font-family: $secondary_font;
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            color: $grey_color;
+            box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.36);
+            border: 1px solid #d9dee8;
+            border-radius: 8px;
+            width: 100%;
+        }
+    }
+    .checkbox {
+        display: flex;
+        align-items: center;
+        input {
+            border-radius: 50%;
+            box-shadow: none;
+            width: auto;
+        }
+        label {
+            font-family: $secondary_font;
+            font-size: 1rem;
+            color: $grey_color;
+            padding-left: 1rem;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        a {
+            color: $main_blue;
+            text-decoration: none;
+            transition: 0.3s ease;
+            &:hover {
+                color: $grey_color;
+            }
+        }
+    }
+    button {
+        text-transform: uppercase;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: $secondary_font;
+        margin: 2rem 0;
+        align-self: center;
+        font-weight: 600;
+        background-color: $main_blue;
+        color: $primary_color;
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+        transition: 0.3s background-color ease;
+        &:hover {
+        background-color: $grey_color;
+        cursor: pointer;
+        }
+        border: none;
+    }
+    .button {
+        text-align: center;
+    }
+}
