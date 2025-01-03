@@ -12,8 +12,9 @@
 
 .contact_page {
     background-color: $grey_background;
+    background-image: url("../../assets/images/pattern.png");
     h2 {
-        font-family: $primary_font;
+        font-family: $secondary_font;
         letter-spacing: 0.1rem;
         font-size: 3rem;
         font-weight: 400;
