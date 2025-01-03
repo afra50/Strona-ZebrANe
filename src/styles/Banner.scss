@@ -9,6 +9,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   &__overlay {
     position: absolute;
@@ -67,5 +68,10 @@
       margin: 0.5rem;
       letter-spacing: 0.1rem;
     }
+  }
+
+  &__actions {
+    margin-top: 3rem;
+    justify-self: center;
   }
 }

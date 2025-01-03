@@ -1,19 +1,33 @@
 @import "./variables.scss";
 @import "./animations.scss";
 
-.donation {
+.donation,
+.gift,
+.transport,
+.volunteer {
   background-color: $grey_background;
   &.visible {
     .left_column h3,
-    .blue_line,
     .right_column i {
       animation-play-state: running;
     }
   }
 }
 
+.tax,
+.store,
+.share {
+  background-color: $primary_color;
+  &.visible {
+    .left_column i,
+    .right_column h3 {
+      animation-play-state: running;
+    }
+  }
+}
+
 .support_container {
-  min-height: 550px;
+  min-height: 600px;
   max-width: 1000px;
   align-items: center;
   -webkit-box-align: center;
@@ -29,13 +43,13 @@
     padding: 0.5rem;
     h3 {
       text-transform: uppercase;
+      margin-top: 2rem;
       font-size: 3rem;
       font-weight: 400;
       color: $more_grey_color;
       letter-spacing: 0.1rem;
       margin-bottom: 1.2rem;
       opacity: 0;
-      animation: slideInLeft 1s ease-in-out forwards;
       animation-play-state: paused;
       &::before {
         content: "";
@@ -63,23 +77,52 @@
         font-weight: bold;
         font-size: 1.5rem;
       }
-    }
-    .blue_line {
-      width: 20%;
-      border-top: 5px solid;
-      border-top-color: $main_blue;
-      padding: 1rem 0;
-      opacity: 0;
-      animation: slideInLeft 1s ease-in-out forwards;
-      animation-play-state: paused;
+      span {
+        color: $main_blue;
+      }
     }
     i {
-      text-align: right;
       font-size: 15rem;
       color: $main_blue;
       opacity: 0;
-      animation: slideInRight 1s ease-in-out forwards;
       animation-play-state: paused;
+    }
+  }
+}
+
+.left_column {
+  h3,
+  i {
+    animation: slideInLeft 1s ease-in-out forwards;
+  }
+  i {
+    text-align: left;
+  }
+}
+
+.right_column {
+  h3,
+  i {
+    animation: slideInRight 1s ease-in-out forwards;
+  }
+  i {
+    text-align: right;
+  }
+}
+
+.adopt {
+  .banner {
+    background-image: url("../assets/images/adoptuj.png");
+    .banner__content {
+      h1 {
+        font-family: $secondary_font;
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 1.1rem;
+      }
     }
   }
 }

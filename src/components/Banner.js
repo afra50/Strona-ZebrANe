@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Banner.scss";
 
-function Banner({ title, subtitle }) {
+function Banner({ title, subtitle, children }) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -10,11 +10,12 @@ function Banner({ title, subtitle }) {
   }, []);
 
   return (
-    <div className="banner" id="support_banner">
+    <div className="banner">
       <div className="banner__overlay"></div>
       <div className={`banner__content ${isLoaded ? "loaded" : ""}`}>
         <h1>{title}</h1>
         <p>{subtitle}</p>
+        {children && <div className="banner__actions">{children}</div>}
       </div>
     </div>
   );

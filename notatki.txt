@@ -1,4 +1,7 @@
 - meta description
 - seo
-- darowizna podpiete platnosci
 - title w zaleznosci od podstrony
+
+wspieram
+- sekcja ze zrzutka
+- darowizna podpieta z platnosciami

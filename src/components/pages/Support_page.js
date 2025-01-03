@@ -5,8 +5,10 @@ import Support_sections from "../Support_sections";
 
 function Support_page() {
   return (
-    <main>
-      <Banner title="Wsparcie" subtitle="Jak możesz pomóc? " />
+    <main className="support_page">
+      <div className="support_banner">
+        <Banner title="Wsparcie" subtitle="Jak możesz pomóc? " />
+      </div>
       <Support_sections />
     </main>
   );

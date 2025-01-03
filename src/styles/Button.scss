@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+.blue_button {
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: $secondary_font;
+  margin: 2rem 0;
+  align-self: center;
+  .button {
+    font-weight: 600;
+    background-color: $main_blue;
+    color: $primary_color;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    transition: 0.3s background-color ease;
+    &:hover {
+      background-color: $grey_color;
+    }
+  }
+}
