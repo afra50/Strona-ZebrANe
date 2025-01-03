@@ -4,6 +4,7 @@ import "../styles/App.scss";
 import Header from "./Header";
 import Home_page from "./pages/Home_page";
 import Support_page from "./pages/Support_page";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home_page />} />
         <Route path="/wspieram" element={<Support_page />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

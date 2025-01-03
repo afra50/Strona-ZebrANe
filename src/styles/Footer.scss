@@ -1,0 +1,10 @@
+@import "./variables.scss";
+
+.footer {
+  height: 20vh;
+  font-size: 5rem;
+  font-family: $primary_font;
+  p {
+    text-align: center;
+  }
+}
