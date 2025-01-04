@@ -30,3 +30,19 @@
     transform: translateX(0);
   }
 }
+
+/* Animacja ptaszka */
+@keyframes checkmark-animation {
+  0% {
+    transform: scale(0); /* Start od niewidocznego */
+      opacity: 0; /* Niewidoczny */
+  }
+  50% {
+    transform: scale(1.2); /* Powiększenie */
+    opacity: 1; /* Widoczny */
+  }
+  100% {
+    transform: scale(1); /* Powrót do normalnego rozmiaru */
+    opacity: 1; /* Widoczny */
+  }
+}

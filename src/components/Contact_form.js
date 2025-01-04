@@ -84,12 +84,19 @@ const Contact_form = () => {
               </div>
   
               <div className="form_group checkbox">
-                <Field type="checkbox" id="policy" name="policy" required />
-                <label htmlFor="policy">
-                  Oświadczam, że zapoznałem/am się z{" "}
-                  <a href="/polityka_prywatnosci.pdf">Polityką Prywatności</a>.
-                </label>
-              </div>
+                  <Field
+                    type="checkbox"
+                    id="policy"
+                    name="policy"
+                    className="custom-checkbox"
+                    required
+                  />
+                  <label htmlFor="policy">
+                    <span></span> {/* Niestandardowy checkbox */}
+                    Oświadczam, że zapoznałem/am się z{" "}
+                    <a href="/polityka_prywatnosci.pdf">Polityką Prywatności</a>.
+                  </label>
+                </div>
 
               <div className="button">
                   <button type="submit" disabled={isSubmitting}>

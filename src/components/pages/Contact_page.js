@@ -2,6 +2,8 @@ import react from "react";
 import Banner from "../Banner";
 import Contact_form from "../Contact_form";
 import "../../styles/pages/Contact_page.scss";
+import { FaFacebookF, FaInstagram } from "react-icons/fa"; // Import ikon
+
 
 function Contact_page() {
     return (
@@ -32,7 +34,22 @@ function Contact_page() {
                             <a href="mailto::kontakt@zebrane.org">kontakt@zebrane.org</a> - e-mail kontaktowy
                         </p>
                         <div className="social_container">
-
+                            <a
+                                href="https://www.facebook.com/FundacjaZebrane"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social_link social_circle facebook"
+                            >
+                                <FaFacebookF />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/FundacjaZebrane"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social_link social_circle instagram"
+                            >
+                                <FaInstagram />
+                            </a>
                         </div>
                     </div>
                 </div>
