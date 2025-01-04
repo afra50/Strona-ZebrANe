@@ -1,0 +1,123 @@
+@import "../variables.scss";
+
+.contact_banner {
+    .banner {
+        background-image: url("../../assets/images/kontakt.png");
+        background-position: top;
+        .banner__content {
+            left: 75%;
+        }
+    }
+}
+
+.contact_page {
+    background-color: $grey_background;
+    background-image: url("../../assets/images/pattern.png");
+    h2 {
+        font-family: $primary_font;
+        letter-spacing: 0.1rem;
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 2rem;;
+        text-transform: uppercase;
+        color: $more_grey_color;
+    }
+    .contact_container {
+        display: flex;
+        padding: 5rem;
+        justify-content: center;
+        margin: 0 auto;
+        .contact_panel {
+            width: 40%;
+            background-color: $primary_color;
+            margin: 0 2rem;
+            border-radius: 3%;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            .panel_body {
+                padding: 2rem;
+                .form_description {
+                    margin-bottom: 2rem;
+                }
+                .contact_mail {
+                    padding-left: 1rem;
+                    border-left: 4px solid $main_blue;
+                    a {
+                        text-decoration: none;
+                        color: $main_blue;
+                        transition: 0.3s ease;
+                        &:hover {
+                            color: $grey_color;
+                        }
+                    }
+                }
+                p {
+                    font-family: $secondary_font;
+                    color: $grey_color;
+                    font-size: 1.2rem;
+                    line-height: 1.8rem;
+                    word-spacing: 0.1rem;
+                    letter-spacing: 0.05rem;
+                    margin-bottom: 1rem;
+                }
+                h3 {
+                    font-family: $secondary_font;
+                    color: $grey_color;
+                    font-weight: 400;
+                    font-size: 1.7rem;
+                    letter-spacing: 0.05;
+                    margin-bottom: 1rem;
+                }
+                .social_container {
+                    display: flex;
+                    justify-content: center; /* Wyrównanie ikon */
+                    gap: 4rem; /* Odstępy między ikonami */
+                    margin-top: 7rem;
+                    .social_link {
+                        text-decoration: none;
+                        transition: all 0.3s ease;          
+                        &.social_circle {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 7rem; /* Szerokość kółka */
+                            height: 7rem; /* Wysokość kółka */
+                            border: 2px solid $grey_color; /* Ramka kółka */
+                            border-radius: 50%; /* Okrągły kształt */
+                            font-size: 2.5rem; /* Rozmiar ikon wewnątrz kółka */
+                            transition: all 0.3s ease;
+                
+                            &:hover {
+                                background-color: $main_blue; /* Kolor tła po najechaniu */
+                                border-color: $main_blue; /* Kolor ramki po najechaniu */
+                                color: $primary_color; /* Kolor ikony po najechaniu */
+                                transform: scale(1.15); /* Delikatne powiększenie */
+                            }
+                
+                            &.facebook {
+                                border-color: #1877f2; /* Specyficzny kolor ramki Facebooka */
+                                color: #1877f2; /* Domyślny kolor Facebooka */
+                
+                                &:hover {
+                                    background-color: #1877f2;
+                                    color: white; /* Kolor ikony po najechaniu */
+                                }
+                            }
+                
+                            &.instagram {
+                                border-color: #e1306c; /* Specyficzny kolor ramki Instagrama */
+                                color: #e1306c; /* Domyślny kolor Instagrama */
+                
+                                &:hover {
+                                    background-color: #e1306c;
+                                    color: white; /* Kolor ikony po najechaniu */
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

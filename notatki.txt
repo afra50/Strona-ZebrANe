@@ -7,3 +7,10 @@
 wspieram
 - sekcja ze zrzutka
 - darowizna podpieta z platnosciami
+
+kontakt
+ - walidacja pol - rusza sie? brzydkie komunikaty waliydacyjne przy mailu
+ - glupi checkbox sie nie odznacza
+ - w telefon mozna wpiswyac liter
+ - idk jakie dokladnie wielkosci pol maja byc
+ - jakis ladniejszy komunikat o wyslaniu wiadomosci + faktyczne wyslanie na maila
