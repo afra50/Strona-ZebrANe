@@ -1,6 +1,8 @@
 - meta description
 - seo
 - title w zaleznosci od podstrony
+- strona nie zostala znaleziona
+- polityka + ciasteczka?
 
 wspieram
 - sekcja ze zrzutka
