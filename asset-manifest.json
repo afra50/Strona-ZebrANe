@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Strona-ZebrANe/static/css/main.8a0f9c0c.css",
-    "main.js": "/Strona-ZebrANe/static/js/main.6149d886.js",
+    "main.css": "/Strona-ZebrANe/static/css/main.39c5c9c6.css",
+    "main.js": "/Strona-ZebrANe/static/js/main.43e42c77.js",
+    "static/media/kontakt.png": "/Strona-ZebrANe/static/media/kontakt.fa94c13d255022ac634e.png",
     "static/media/wspieram.png": "/Strona-ZebrANe/static/media/wspieram.a461a09ff3e5aad78ce9.png",
     "static/media/adoptuj.png": "/Strona-ZebrANe/static/media/adoptuj.222d48ae9206edfee404.png",
     "index.html": "/Strona-ZebrANe/index.html",
-    "main.8a0f9c0c.css.map": "/Strona-ZebrANe/static/css/main.8a0f9c0c.css.map",
-    "main.6149d886.js.map": "/Strona-ZebrANe/static/js/main.6149d886.js.map"
+    "main.39c5c9c6.css.map": "/Strona-ZebrANe/static/css/main.39c5c9c6.css.map",
+    "main.43e42c77.js.map": "/Strona-ZebrANe/static/js/main.43e42c77.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a0f9c0c.css",
-    "static/js/main.6149d886.js"
+    "static/css/main.39c5c9c6.css",
+    "static/js/main.43e42c77.js"
   ]
 }
